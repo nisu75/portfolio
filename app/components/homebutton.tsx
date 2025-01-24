@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { arialUnicode } from "../../styles/fonts";
 
@@ -27,7 +27,15 @@ const cats = [
 
 export default function HomeButton() {
     const [currentCat, setCurrentCat] = useState(cats[1]);
+    const [isTouchscreen, setIsTouchscreen] = useState(false);
 
+    useEffect(() => {
+        const checkTouchscreen = () => {
+            setIsTouchscreen(navigator.maxTouchPoints > 0);
+        };
+        checkTouchscreen();
+    }, []);
+    
     const getRandomCat = () => {
         let randomIndex;
         do {
@@ -37,24 +45,43 @@ export default function HomeButton() {
     };
   
     const handleMouseDown = () => {
-      setCurrentCat(cats[0]);
+        if (!isTouchscreen) {
+            setCurrentCat(cats[0]);
+        }
     };
   
     const handleMouseUp = () => {
-      setCurrentCat(cats[1]);
+        if (!isTouchscreen) {
+            setCurrentCat(cats[1]);
+        }
     };
 
     const handleMouseEnter = () => {
-      setCurrentCat(getRandomCat());
+        if (!isTouchscreen) {
+            setCurrentCat(getRandomCat());
+        }
+    };
+
+    const handleTouchStart = () => {
+        setCurrentCat(cats[0]);
+    };
+
+    const handleTouchEnd = () => {
+        setCurrentCat(cats[1]);
     };
 
     return (
-        <div className={`${arialUnicode.className} text-foreground-100 ml-2 mb-0`}>
-            <Link href="/" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseEnter={handleMouseEnter}>
-                <div>
-                    <span dangerouslySetInnerHTML={{ __html: currentCat }} />
-                </div>
-            </Link>
-        </div>
+        <Link href="/" passHref>
+            <div 
+                className={`${arialUnicode.className} text-foreground-100 ml-2 mb-0`}
+                onMouseDown={handleMouseDown} 
+                onMouseUp={handleMouseUp} 
+                onMouseEnter={handleMouseEnter}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+            >
+                <span dangerouslySetInnerHTML={{ __html: currentCat }} />
+            </div>
+        </Link>
     );
 }
