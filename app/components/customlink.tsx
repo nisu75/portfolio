@@ -34,9 +34,6 @@ const CustomLink = ({ children, className, type = "real", target, ...props }: Cu
         }
     }
 
-    console.log('additionalProps:', additionalProps);
-    console.log('props:', props);
-
     const style: CSSProperties = {
         "--link-color": `var(${defaultLinkColor})`,
         "--link-color-rgb": `var(${defaultLinkColorRgb})`
