@@ -4,6 +4,7 @@ import { sometypeMono } from "../styles/fonts";
 import NavBar from "./components/navbar";
 import HomeButton from "./components/homebutton";
 import Footer from "./components/footer";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="flex-grow w-full mt-1 mx-2 pb-8 md:w-3/5 body">
               {children}
+              <Analytics />
               <div className="mt-8">
                 <Footer />
               </div>
