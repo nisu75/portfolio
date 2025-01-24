@@ -17,7 +17,14 @@ export default function About() {
                     className="mb-2 priority"
                     alt="me next to my goat (camel) at the rom"
                 />
-                <p>📍 royal ontario museum, toronto </p>
+                <p>📍 {" "}
+                <CustomLink
+                    href="https://www.rom.on.ca/"
+                    type="real"
+                >
+                    royal ontario museum
+                </CustomLink>
+                , toronto </p>
             </div>
             <br />
             <p>
@@ -32,21 +39,65 @@ export default function About() {
                 <b>currently, i'm ...</b>
             </p>
             <ul className="list-disc list-outside ml-4">
-                <li>studying computer science at the University of Waterloo</li>
-                <li>completing my second internship (ai + cybersec @ Globys)</li>
-                <li>preparing for exchange! (winter 2026 @ NUS) </li>
+                <li>
+                    studying computer science at the {" "}
+                    <CustomLink
+                        href="https://cs.uwaterloo.ca/"
+                        type="real"
+                    >
+                        University of Waterloo
+                    </CustomLink>
+                </li>
+                <li>
+                    completing my second internship (ai + cybersec @ {" "}
+                    <CustomLink
+                        href="https://www.globys.com/"
+                        type="real"
+                    >
+                        Globys
+                    </CustomLink>
+                    )
+                </li>
+                <li>
+                    preparing for exchange! (winter 2026 @ {" "}
+                    <CustomLink
+                        href="https://nus.edu.sg/"
+                        type="real"
+                    >
+                        NUS
+                    </CustomLink>
+                    ) 
+                </li>
             </ul>
             <br />
             <p>
                 <b>previously, i ...</b>
             </p>
             <ul className="list-disc list-outside ml-4">
-                <li>reached tier 3 in the WiCyS Security Training Scholarship</li>
-                <li>passed the ISC2 Certified in Cybersecurity exam</li>
-                <li>completed my first internship (cybersecurity @ Globys)</li>
-                <li>received the René Descartes National Scholarship ($25 000 CAD)</li>
-                <li>placed first in Canada CyberTitan 2023, second in 2022 as part of team Art Academy</li>
-                <li>qualified for the American Invitational Mathematics Examination 2023 + 2022</li>
+                <li>
+                    reached tier 3 in the WiCyS Security Training Scholarship
+                </li>
+                <li>
+                    passed the ISC2 Certified in Cybersecurity exam
+                </li>
+                <li>
+                    completed my first internship (cybersecurity @ Globys)
+                </li>
+                <li>
+                    received the René Descartes National Scholarship ($25 000 CAD)
+                </li>
+                <li>
+                    placed first in Canada CyberTitan 2023, second in 2022 as part of team {" "}
+                    <CustomLink
+                        href="https://etalentcanada.ca/news/art-academy-wins-canadas-cybertitan-vi-championship-tight-race"
+                        type="real"
+                    >
+                        Art Academy
+                    </CustomLink>
+                </li>
+                <li>
+                    qualified for the American Invitational Mathematics Examination 2023 + 2022
+                </li>
             </ul>
         </div>
     );

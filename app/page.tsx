@@ -64,7 +64,7 @@ export default function Home() {
         <p>
           welcome to my {" "}
           <CustomLink
-            href=""
+            href="https://www.websitecarbon.com/website/nicolexcui-vercel-app/"
             type="real"
           >
             little corner

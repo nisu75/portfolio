@@ -6,15 +6,15 @@ interface CustomLinkProps extends LinkProps {
     className?: string;
     children: ReactNode;
     type?: "navbar" | "real" | "clickable";
-    target?: string;
+    [key: string]: any;
 }
 
 const CustomLink = ({ children, className, type = "real", target, ...props }: CustomLinkProps) => {
     let linkClass = "";
-    let additionalProps = {};
     let defaultClassName = "";
     let defaultLinkColor = "";
     let defaultLinkColorRgb = "";
+    let additionalProps: { [key: string]: any } = {};
 
     if (type === "navbar") {
         linkClass = "navbar-link-hover-effect";
@@ -25,8 +25,8 @@ const CustomLink = ({ children, className, type = "real", target, ...props }: Cu
             defaultLinkColorRgb = "--foreground-rgb";
         } else {
             additionalProps = {
-                target: "_blank",
                 rel: "noopener noreferrer",
+                target: "_blank",
             };
             defaultClassName = "text-highlight-70";
             defaultLinkColor = "--highlight";
@@ -34,13 +34,16 @@ const CustomLink = ({ children, className, type = "real", target, ...props }: Cu
         }
     }
 
+    console.log('additionalProps:', additionalProps);
+    console.log('props:', props);
+
     const style: CSSProperties = {
         "--link-color": `var(${defaultLinkColor})`,
         "--link-color-rgb": `var(${defaultLinkColorRgb})`
     } as CSSProperties;
 
     return (
-        <Link {...props} {...additionalProps} className={clsx(linkClass, defaultClassName, className)} target={target} style={style}>
+        <Link {...props} {...additionalProps} className={clsx(linkClass, defaultClassName, className)} style={style}>
             {children}
         </Link>
     );
