@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CustomLink from '../components/customlink';
+import CustomLink from "../components/customlink";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex md:w-1/8 md:flex-col">
               <NavBar />
             </div>
-            <div className="flex-grow w-full mt-1 mx-2 pb-8 md:w-3/5 body">
+            <div className="flex-grow mt-1 mx-2 pb-8 md:w-3/5 body">
               {children}
               <Analytics />
               <div className="mt-8">

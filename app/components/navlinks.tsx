@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 const links = [
     { name: "about", href: "/about" },
     { name: "projects", href: "/projects" },
-    { name: "logbook", href: "/logbook" },
     { name: "resume", href: "/resume" }
 ];
 
@@ -47,16 +46,14 @@ export default function NavLinks() {
                     </CustomLink>
                 );
             })}
-            <div className="hidden min-[460px]:flex">
-                <CustomLink
-                    href=""
-                    type="navbar"
-                    onClick={toggleDarkMode}
-                    className="mx-2 text-foreground-60 md:mx-0 md:my-1"
-                >
-                    lightswitch
-                </CustomLink>
-            </div>
+            <CustomLink
+                href=""
+                type="navbar"
+                onClick={toggleDarkMode}
+                className="mx-2 text-foreground-60 md:mx-0 md:my-1"
+            >
+                lightswitch
+            </CustomLink>
         </div>
     );
 }
