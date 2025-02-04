@@ -1,6 +1,4 @@
-import Link from 'next/link'
-import { arialUnicode } from "../../styles/fonts";
-import CustomLink from "./components/customlink";
+import { arialUnicode } from "../styles/fonts";
 
 export default function NotFound() {
   return (
