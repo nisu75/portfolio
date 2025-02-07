@@ -79,4 +79,7 @@ body.dark {
   box-shadow: 8px 8px 0px 0px rgba(var(--highlight-rgb), 0.5);
 }
 
+.fa-icon:hover {
+  color: rgba(var(--foreground-rgb), 0.6);
+  transition: color 0.1s ease;
 }
