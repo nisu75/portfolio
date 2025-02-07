@@ -5,5 +5,19 @@
         "date": "nov 2024",
         "image": "/images/biquadris.gif",
         "link": "https://github.com/nisu75/biquadris"
+    },
+    {
+        "name": "refrigerATE",
+        "description": "your own virtual fridge with food expiration timers to track freshness and reduce spoilage.",
+        "date": "sept 2024",
+        "image": "/images/refrigerate.gif",
+        "link": "https://devpost.com/software/refrigerate"
+    },
+    {
+        "name": "feed the frog",
+        "description": "pomodoro with the \"eat the frog\" productivity technique to keep you focused with music that matches your vibe.",
+        "date": "nov 2021",
+        "image": "/images/feedthefrog.png",
+        "link": "https://devpost.com/software/feed-the-frog"
     }
 ]

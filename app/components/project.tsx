@@ -22,7 +22,7 @@ export default function Project({ item }: ProjectProps) {
             <Link href={link} target="_blank" rel="noopener noreferrer">
                 <Image 
                     src={image} alt={name} width={500} height={300} unoptimized
-                    className="w-full mb-5 border-2 border-foreground"/>
+                    className="w-full mb-5 border-2 project-image"/>
             </Link>
             <p>
                 <CustomLink href={link} type="real">

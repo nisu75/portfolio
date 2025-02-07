@@ -62,10 +62,6 @@ body.dark {
   color: rgba(var(--link-color-rgb, var(--foreground-rgb)), 0.4);
 }
 
-.text-foreground-50 {
-  color: rgba(var(--foreground-rgb), 0.5);
-}
-
 .text-foreground-60 {
   color: rgba(var(--foreground-rgb), 0.6);
 }
@@ -74,18 +70,13 @@ body.dark {
   color: rgba(var(--highlight-rgb), 0.7);
 }
 
-.text-highlight-100 {
-  color: rgba(var(--highlight-rgb), 1);
-}
-
-.text-highlight-100 {
-  color: rgba(var(--highlight-rgb), 1);
-}
-
-.border-foreground {
+.project-image {
   border-color: var(--foreground);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.border-foreground:hover {
+.project-image:hover {
   box-shadow: 8px 8px 0px 0px rgba(var(--highlight-rgb), 0.5);
+}
+
 }
