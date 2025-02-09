@@ -15,7 +15,7 @@ export default function About() {
                     width={320}
                     height={240}
                     className="mb-2 priority"
-                    alt="me next to my goat (camel) at the rom"
+                    alt="a selfie with a camel statue at the rom!"
                 />
                 <p>📍 {" "}
                 <CustomLink
@@ -27,17 +27,19 @@ export default function About() {
                 , toronto </p>
             </div>
             <br />
-            <p>
+            <h1>
                 <b>about me</b>
-                <br /><br />
+            </h1>
+            <br />
+            <p>
                 🚧 ٩( ᐛ )( ᐖ )۶ 🚧
                 <br />
                 work in progress, please check back later!
             </p>
             <br />
-            <p>
+            <h2>
                 <b>currently, i'm ...</b>
-            </p>
+            </h2>
             <ul className="list-disc list-outside ml-4">
                 <li>
                     studying computer science at the {" "}
@@ -70,9 +72,9 @@ export default function About() {
                 </li>
             </ul>
             <br />
-            <p>
+            <h2>
                 <b>previously, i ...</b>
-            </p>
+            </h2>
             <ul className="list-disc list-outside ml-4">
                 <li>
                     reached tier 3 in the WiCyS Security Training Scholarship

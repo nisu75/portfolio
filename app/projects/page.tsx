@@ -10,9 +10,11 @@ export const metadata: Metadata = {
 export default function Projects() {
     return (
         <>
-            <p>
+            <h1>
                 <b>projects</b>
-                <br /><br />
+            </h1>
+            <br />
+            <p>
                 🚧 ٩( ᐛ )( ᐖ )۶ 🚧
                 <br />
                 work in progress, please check back later!

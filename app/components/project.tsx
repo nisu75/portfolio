@@ -24,12 +24,12 @@ export default function Project({ item }: ProjectProps) {
                     src={image} alt={name} width={500} height={300} unoptimized
                     className="w-full mb-5 border-2 project-image"/>
             </Link>
-            <p>
+            <h2>
                 <CustomLink href={link} type="real">
                     <i>{name}</i>
                 </CustomLink>
                 {" // " + date}
-            </p>
+            </h2>
             <p>{description}</p>
         </div>
     );

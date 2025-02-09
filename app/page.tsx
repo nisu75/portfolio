@@ -56,9 +56,9 @@ export default function Home() {
 
   return (
     <div>
-      <p>
+      <h1>
         hi, i'm nicole!
-      </p>
+      </h1>
       <br />
       {soupMounted && (
         <p>
@@ -97,7 +97,7 @@ export default function Home() {
         </p>
       )}
       <br />
-      <p>
+      <h2>
         reach out anytime at {" "}
         <CustomLink
           href="mailto:nicolexcui@gmail.com"
@@ -105,7 +105,7 @@ export default function Home() {
         >
           nicolexcui@gmail.com
         </CustomLink> 📬
-      </p>
+      </h2>
       <br />
       <p>
         or you can find me at: {" "}
@@ -124,9 +124,9 @@ export default function Home() {
         </CustomLink>
       </p>
       <br />
-      <p className="hidden text-foreground-60 text-sm md:block">
+      <h3 className="hidden text-foreground-60 text-sm md:block">
         ps. try petting the cat in the corner! (it's also the home button)
-      </p>
+      </h3>
     </div>
   );
 }

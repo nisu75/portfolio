@@ -6,12 +6,16 @@ export const metadata: Metadata = {
 
 export default function Resume() {
     return (
-        <p>
-            <b>resume</b>
-            <br /><br />
-            🚧 ٩( ᐛ )( ᐖ )۶ 🚧
+        <>
+            <h1>
+                <b>resume</b>
+            </h1>
             <br />
-            work in progress, please check back later!
-        </p>
+            <p>
+                🚧 ٩( ᐛ )( ᐖ )۶ 🚧
+                <br />
+                work in progress, please check back later!
+            </p>
+        </>
     );
 }
