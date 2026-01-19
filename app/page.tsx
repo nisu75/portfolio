@@ -124,6 +124,10 @@ export default function Home() {
         </CustomLink>
       </p>
       <br />
+      <p>
+        please reach out to me for my resume!
+      </p>
+      <br />
       <h3 className="hidden text-foreground-60 text-sm md:block">
         ps. try petting the cat in the corner! (it's also the home button)
       </h3>
