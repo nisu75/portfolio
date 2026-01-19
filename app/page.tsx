@@ -125,7 +125,7 @@ export default function Home() {
       </p>
       <br />
       <p>
-        please reach out to me for my resume!
+        please contact me for my resume!
       </p>
       <br />
       <h3 className="hidden text-foreground-60 text-sm md:block">
